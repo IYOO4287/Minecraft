@@ -31,7 +31,7 @@ public class Interfaz extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         jLabel1Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -68,10 +68,10 @@ public class Interfaz extends javax.swing.JFrame {
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 180, -1));
 
-        jButton5.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        jButton5.setText("Encantamientos");
-        jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, 180, -1));
+        jButton6.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        jButton6.setText("Minerales");
+        jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, 180, -1));
 
         jLabel1Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/b764d3546a4a6910acb27faf851af2ab.jpg"))); // NOI18N
         jLabel1Fondo.setText("jLabel1");
@@ -128,7 +128,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1Fondo;
     // End of variables declaration//GEN-END:variables
 }
