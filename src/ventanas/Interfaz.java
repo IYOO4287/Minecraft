@@ -69,7 +69,7 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 180, -1));
 
         jButton6.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        jButton6.setText("Botón");
+        jButton6.setText("Botón número 6");
         jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, 180, -1));
 
