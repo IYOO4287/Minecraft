@@ -1,8 +1,8 @@
 package ventanas;
 
-public class Noticias extends javax.swing.JFrame {
+public class Encantamientos extends javax.swing.JFrame {
 
-    public Noticias() {
+    public Encantamientos() {
         initComponents();
     }
 
@@ -17,13 +17,13 @@ public class Noticias extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setText("Noticias");
+        jLabel1.setText("Encantamientos");
 
         jLabel2.setText("IMAGEN");
 
         jLabel3.setText("ESCRITO");
 
-        jButtonVolver.setText("Volver");
+        jButtonVolver.setText("Regresar");
         jButtonVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonVolverActionPerformed(evt);
@@ -67,7 +67,7 @@ public class Noticias extends javax.swing.JFrame {
     }
 
     private void jButtonVolverActionPerformed(java.awt.event.ActionEvent evt) {
-        // Cerrar la ventana actual (Noticias) y mostrar la ventana principal (Interfaz)
+        // Cerrar la ventana actual (Encantamientos) y mostrar la ventana principal (Interfaz)
         this.dispose(); // Cierra la ventana actual
         Interfaz ventanaPrincipal = new Interfaz();
         ventanaPrincipal.setVisible(true); // Muestra la ventana principal

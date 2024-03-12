@@ -1,5 +1,15 @@
 package ventanas;
 
+import org.netbeans.lib.awtextra.AbsoluteConstraints;
+import org.netbeans.lib.awtextra.AbsoluteLayout;
+
+import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.SoftBevelBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 public class Interfaz extends javax.swing.JFrame {
 
     public Interfaz() {
@@ -11,33 +21,55 @@ public class Interfaz extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jLabel1Fondo = new javax.swing.JLabel();
+        //Declaración de objetos
+        jButtonEncantamientos = new JButton();
+        jButtonMateriales = new JButton();
+        jLabel1Fondo = new JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Segoe UI Black", 0, 18));
-        jButton1.setText("Noticias");
-        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+        jButtonEncantamientos.setFont(new Font("Segoe UI Black", 0, 18));
+        jButtonEncantamientos.setText("Encantamientos");
+        jButtonEncantamientos.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
+        jButtonEncantamientos.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                jButtonEncantamientos(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, 180, 40));
+        getContentPane().add(jButtonEncantamientos, new AbsoluteConstraints(210, 150, 180, 40));
 
-        jLabel1Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/b764d3546a4a6910acb27faf851af2ab.jpg"))); // NOI18N
+        jButtonMateriales.setFont(new Font("Segoe UI Black", 0, 18)); //Asignar fuente el botón
+        jButtonMateriales.setText("Materiales"); // Asignarle un texto al botón
+        jButtonMateriales.setBorder(new SoftBevelBorder(BevelBorder.RAISED)); //Tipo de borde asignado
+        jButtonMateriales.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                jButtonMateriales(evt);
+            }
+        });
+        //Añadir el botón al panel de la ventana con determinado tamaño y posición
+        getContentPane().add(jButtonMateriales, new AbsoluteConstraints(210, 200, 180, 40));
+
+
+        jLabel1Fondo.setIcon(new ImageIcon(getClass().getResource("/imagenes/b764d3546a4a6910acb27faf851af2ab.jpg"))); // NOI18N
         jLabel1Fondo.setText("jLabel1");
-        getContentPane().add(jLabel1Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -1, 600, 650));
+        getContentPane().add(jLabel1Fondo, new AbsoluteConstraints(0, -1, 600, 650));
 
         pack();
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        Noticias pantalla = new Noticias();
-        pantalla.setVisible(true);
-        pantalla.setLocationRelativeTo(null);
+    private void jButtonEncantamientos(java.awt.event.ActionEvent evt) {
+        Encantamientos pantallaEncantamientos = new Encantamientos();
+        pantallaEncantamientos.setVisible(true);
+        pantallaEncantamientos.setLocationRelativeTo(null);
+        this.dispose();
+    }
+
+    private void jButtonMateriales(ActionEvent evt) {
+        Materiales pantallaMateriales = new Materiales(); //Nuevo objeto del tipo Minerales
+        pantallaMateriales.setVisible(true); //Mostrar la ventana de la clase Minerales
+        pantallaMateriales.setLocationRelativeTo(null); //Iniciar la ventana en el centro de la pantalla
         this.dispose(); // Cerrar la ventana actual (Interfaz)
     }
 
@@ -62,8 +94,6 @@ public class Interfaz extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
 
-
-
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Interfaz().setVisible(true);
@@ -71,6 +101,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
     }
 
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonEncantamientos;
+    private javax.swing.JButton jButtonMateriales;
     private javax.swing.JLabel jLabel1Fondo;
 }
