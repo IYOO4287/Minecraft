@@ -11,7 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Interfaz extends javax.swing.JFrame {
-
     public Interfaz() {
         this.setUndecorated(false);
         initComponents();
@@ -20,7 +19,6 @@ public class Interfaz extends javax.swing.JFrame {
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
-
         //Declaración de objetos
         jButtonEncantamientos = new JButton();
         jButtonMateriales = new JButton();
@@ -51,8 +49,7 @@ public class Interfaz extends javax.swing.JFrame {
         //Añadir el botón al panel de la ventana con determinado tamaño y posición
         getContentPane().add(jButtonMateriales, new AbsoluteConstraints(210, 200, 180, 40));
 
-
-        jLabel1Fondo.setIcon(new ImageIcon(getClass().getResource("/imagenes/b764d3546a4a6910acb27faf851af2ab.jpg"))); // NOI18N
+        jLabel1Fondo.setIcon(new ImageIcon(getClass().getResource("/imagenes/backgroundMenu.jpg")));
         jLabel1Fondo.setText("jLabel1");
         getContentPane().add(jLabel1Fondo, new AbsoluteConstraints(0, -1, 600, 650));
 
