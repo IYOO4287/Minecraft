@@ -37,9 +37,9 @@ public class Interfaz extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonEncantamientos, new AbsoluteConstraints(210, 150, 180, 40));
 
-        jButtonMateriales.setFont(new Font("Segoe UI Black", 0, 18)); //Asignar fuente el botón
-        jButtonMateriales.setText("Materiales"); // Asignarle un texto al botón
-        jButtonMateriales.setBorder(new SoftBevelBorder(BevelBorder.RAISED)); //Tipo de borde asignado
+        jButtonMateriales.setFont(new Font("Segoe UI Black", 0, 18));
+        jButtonMateriales.setText("Materiales");
+        jButtonMateriales.setBorder(new SoftBevelBorder(BevelBorder.RAISED));
         jButtonMateriales.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
@@ -97,6 +97,7 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
     }
+
 
     private javax.swing.JButton jButtonEncantamientos;
     private javax.swing.JButton jButtonMateriales;
