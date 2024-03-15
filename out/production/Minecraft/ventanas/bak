@@ -168,7 +168,7 @@ public class Encantamientos extends JFrame {
                             """;
                     textArea.setText(enchantmentInfo);
                     break;
-                case "Pico":
+                    case "Pico":
                     enchantmentInfo = """
                             Eficiencia (1-5)
                             Toque de seda (1)
@@ -176,10 +176,10 @@ public class Encantamientos extends JFrame {
                             Irrompibilidad (1-3)
                             Maldición de desaparición (1)
                             """;
-                    textArea.setText(enchantmentInfo);
-                    break;
-                case "Hacha":
-                    enchantmentInfo = """
+                        textArea.setText(enchantmentInfo);
+                        break;
+                    case "Hacha":
+                        enchantmentInfo = """
                             Eficiencia (1-5)
                             Irrompibilidad (1-3)
                             Maldición de desaparición (1)
@@ -187,8 +187,8 @@ public class Encantamientos extends JFrame {
                             Fortuna (1-3)
                             Filo (1-5)
                             """;
-                    textArea.setText(enchantmentInfo);
-                    break;
+                        textArea.setText(enchantmentInfo);
+                        break;
                 case "Pala":
                     enchantmentInfo = """
                             Eficiencia (1-5)
@@ -199,7 +199,7 @@ public class Encantamientos extends JFrame {
                             """;
                     textArea.setText(enchantmentInfo);
                     break;
-                case "Espada":
+                    case "Espada":
                     enchantmentInfo = """
                             Irrompibilidad (1-3)
                             Maldición de desaparición (1)
@@ -212,9 +212,7 @@ public class Encantamientos extends JFrame {
                             Botín (1-3)
                             """;
                     textArea.setText(enchantmentInfo);
-                    break;
-                case "Seleccione una opción":
-                    textArea.setText("Seleccione una pieza de armadura");
+
                 case null:
                     break;
                 default:
